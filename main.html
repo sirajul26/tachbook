@@ -26,3 +26,124 @@
         </ul>
       </nav>
     </header>
+  </body>
+</html>
+CSS Styles:
+
+/* Reset default styles */
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Set up the grid layout */
+body {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;
+font-family: Arial, sans-serif;
+}
+
+/* Style header section */
+header {
+grid-column: 1 / -1;
+grid-row: 1;
+display: flex;
+align-items: center;
+padding: 10px;
+background-color: #3b5998;
+}
+
+.logo img {
+height: 40px;
+margin-right: 10px;
+}
+
+nav {
+margin-left: auto;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+}
+
+nav li {
+margin-right: 20px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* Style main content section */
+main {
+grid-column: 2 / -2;
+grid-row: 2;
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+gap: 20px;
+padding: 20px;
+background-color: #f2f2f2;
+}
+
+.user-profile img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+
+.user-profile h1 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.user-profile p {
+font-size: 16px;
+line-height: 1.5;
+}
+
+.user-feed h2, .user-posts h2 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.post {
+border: 1px solid #ddd;
+padding: 10px;
+background-color: #fff;
+}
+
+.post img {
+width: 100%;
+height: auto;
+margin-bottom: 10px;
+}
+
+.post h3 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.post p {
+font-size: 16px;
+line-height: 1.5;
+}
+
+.comments h4 {
+font-size: 18px;
+font-weight:
+
+
+
